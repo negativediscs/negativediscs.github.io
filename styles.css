@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Whitney HTF';
+    src: url("/WhitneyHTF-Medium.woff") format('woff');
+}
+
+html, body {
+  margin: 4;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Whitney HTF', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+h1 {font-size: 1.5rem; font-weight: 400; margin: 0;}
+p {font-size: 1rem; margin: 0;}
+a {margin: 8px 0 8px 0;}
+
+::selection {
+    background: rgba(0,0,255,0.2);
+}
+::-moz-selection {
+    background: rgba(0,0,255,0.2);
+}
+
+.sp-title {font-weight: 600; margin: 0 0 12px 0;}
+.sp-footer {margin: 12px 0 0 0; color: #808080}
+.fp-footer, .sp-footer {font-size: 0.8rem;}
+
+.fp-body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.fp-wrapper {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+.fp-content {
+  color: #aaa;
+  text-align: center;
+  mix-blend-mode: color-dodge;
+  animation: glow 3s infinite;
+}
+
+.fp-navbutton {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border: 2px solid #aaaaaa;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #aaaaaa;
+  width: 32px;
+  height: 32px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.fp-navbutton:hover {
+  background-color: rgba(102,102,102, 0.5);
+  transition: 0.1s;
+}
+.fp-navbutton:active {
+  background-color: #aaaaaa;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@-webkit-keyframes glow {
+  0% {text-shadow: 0 0 8px #aaaaaa;}
+  50% {text-shadow: 0 0 32px #aaaaaa;}
+  100% {text-shadow: 0 0 8px #aaaaaa;}
+}
+@-moz-keyframes glow {
+  0% {text-shadow: 0 0 8px #aaaaaa;}
+  50% {text-shadow: 0 0 32px #aaaaaa;}
+  100% {text-shadow: 0 0 8px #aaaaaa;}
+}
+@-o-keyframes glow {
+  0% {text-shadow: 0 0 8px #aaaaaa;}
+  50% {text-shadow: 0 0 32px #aaaaaa;}
+  100% {text-shadow: 0 0 8px #aaaaaa;}
+}
+@keyframes glow {
+  0% {text-shadow: 0 0 8px #aaaaaa;}
+  50% {text-shadow: 0 0 32px #aaaaaa;}
+  100% {text-shadow: 0 0 8px #aaaaaa;}
+}
+
+@-webkit-keyframes rainbow {
+  0% {background-position: 0% 82%}
+  50% {background-position: 100% 19%}
+  100% {background-position: 0% 82%}
+}
+@-moz-keyframes rainbow {
+  0% {background-position: 0% 82%}
+  50% {background-position: 100% 19%}
+  100% {background-position: 0% 82%}
+}
+@-o-keyframes rainbow {
+  0% {background-position: 0% 82%}
+  50% {background-position: 100% 19%}
+  100% {background-position: 0% 82%}
+}
+@keyframes rainbow { 
+  0% {background-position: 0% 82%}
+  50% {background-position: 100% 19%}
+  100% {background-position: 0% 82%}
+}
